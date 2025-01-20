@@ -120,9 +120,20 @@ movie/
 
 ---
 
-## **Validation and Testing**
+<!-- ## **Validation and Testing**
 - Tested for cross-browser compatibility.
 - Verified responsiveness across devices using Chrome DevTools.
-- Form validation and interactivity thoroughly checked.
+- Form validation and interactivity thoroughly checked. -->
+
+## **Bean Validation**
+- Bean validation is used on user and movie models using annotations like `@NotNull`, `@Email`, `@Size`, and custom validation annotations where needed.
+- The validation annotations ensure that the user inputs (username, password, email) and movie details are correct before any data is processed or stored.
+
+---
+---
+## **Exception Handling**
+- Implemented custom exception handling to capture and handle errors.
+- Used `@ControllerAdvice` to handle exceptions globally and provide user-friendly error messages for issues like invalid inputs or server errors.
+- Proper response status codes are returned for each exception type to maintain clear communication between the frontend and backend.
 
 ---
